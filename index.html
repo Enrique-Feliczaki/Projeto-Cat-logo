@@ -8,16 +8,16 @@
 </head> 
 <body>
     <header class="header">
-        
-        <img src="./img/SM_1_-removebg-preview.png" alt="logo">
+        <div class="logo">
+            <img src="./img/SM_1_-removebg-preview.png" alt="logo">
             
-        <h1>SmigolS</h1>
-            
+            <h1>SmigolS</h1>
+        </div>  
         <div class="menu">
             <ul>
                 <li><a href="#">Catalogo</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Categorias</a></li>
+                <li ><a href="#Contact">Contato</a></li>
                 <button>Login</button>
             </ul>
         </div>
@@ -64,26 +64,26 @@
                 <p class="price">R$ 37.900,00</p>
             </div>
         </div>
-    </div>
-
-    <h2>Entre em contato</h2>
-    <form class="contact-form">
+        <h2 id="Contact">Entre em contato</h2>
+        <form class="contact-form">
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
         <label for="car">Carro de Interesse:</label>
         <select  id="car" name="car" required>
-         <option value="HYUNDAI HB20"></option>
-         <option value="HONDA CIVIC"></option>  
-         <option value="CHEVROLET JOY BLACK"></option> 
-         <option value="VOLKSWAGEN VIIRTUS TSI"></option>
-         <option value="PALIO ATTRACTIVE"></option>
-         <option value="CHEVROLET ASTRA"></option>
+        <option value="HYUNDAI HB20">HYUNDAI HB20</option>
+        <option value="HONDA CIVIC">HONDA CIVIC</option>  
+        <option value="CHEVROLET JOY BLACK">CHEVROLET JOY BLACK</option> 
+        <option value="VOLKSWAGEN VIIRTUS TSI">VOLKSWAGEN VIIRTUS TSI</option>
+        <option value="PALIO ATTRACTIVE">PALIO ATTRACTIVE</option>
+        <option value="CHEVROLET ASTRA">CHEVROLET ASTRA</option>
         </select>
-        
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
 
-
+        <button type="submit">Enviar</button>
+    </div>    
 
 
     </form>
