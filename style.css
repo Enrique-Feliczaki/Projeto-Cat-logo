@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header img{
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+
+.menu li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.menu li a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.car-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.car-card{
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2 ease;
+}
+
+.car-card:hover{
+    transform: scale(1.05);
+
+}
+.car-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.car-card h3{
+    margin: 0 15px 15px;
+    color:  #666;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 0 15px 15px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
